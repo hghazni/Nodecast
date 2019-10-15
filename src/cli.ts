@@ -4,7 +4,7 @@ import minimist from 'minimist';
 import { help } from './help';
 //const minimist = require('minimist');
 // import { configure } from './configure';
-// import { version } from './version';
+import { version } from './version';
 
 export async function cli(argsArray: any) {
     const args = minimist(argsArray.slice(2));
@@ -19,9 +19,9 @@ export async function cli(argsArray: any) {
     }
 
     switch (cmd) {
-    //   case 'version':
-    //     version(args);
-    //     break;
+      case 'version':
+        version(args);
+        break;
 
       case 'help':
         help(args);
