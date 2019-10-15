@@ -6,7 +6,7 @@ type MenuType = {
 
 const menus: MenuType = {
   main: `
-${chalk.greenBright('weather [command] <options>')}
+${chalk.greenBright('nodecast [command] <options>')}
   ${chalk.blueBright('now')} ................ show weather for now
   ${chalk.blueBright('forecast')} ........... show weather forecast
   ${chalk.blueBright('config')}.............. set API key, default city ID, default temperature units
